@@ -1,0 +1,19 @@
+{
+  "name": "lusion-reconstructed",
+  "version": "1.0.0",
+  "description": "1:1 Reconstructed Lusion.co 3D Interactive Web Experience",
+  "type": "module",
+  "scripts": {
+    "start": "node serve.mjs",
+    "build": "node prepare_deploy.mjs",
+    "tunnel": "npx cloudflared tunnel --url http://localhost:8888",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "dependencies": {
+    "playwright-core": "^1.64.1"
+  },
+  "devDependencies": {
+    "wrangler": "^4.151.1"
+  }
+}
